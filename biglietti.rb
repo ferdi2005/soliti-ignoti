@@ -23,7 +23,7 @@ userdata.map { |e| e.strip! }
 biglietti = File.open("#{__dir__}/#{userdata[1]}", "r").to_a
 
 b = Watir::Browser.new :firefox, headless: true
-b.goto("https://ldt.lottomaticaitalia.it/showcase/?idRivenditore=ltmita&kind=web&config=verifica")
+b.goto("https://ldt.igt-italia.it/showcase/?idRivenditore=lotteriaitalia&kind=web&config=verifica")
 
 biglietti_perdenti = []
 biglietti_vincenti = []
